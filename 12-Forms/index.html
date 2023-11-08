@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .error{
+            border-color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Forms</h1>
+    
+    <form>
+        <div class="formInput">
+            <label for="name">Name:</label>
+            <input type="text" name="name" required placeholder="enter your name">
+        </div>
+
+        <div class="formInput">
+            <label for="email">Email:</label>
+            <input type="email" name="email" onblur="check(this)">
+        </div>
+
+        <div class="formInput">
+            <label for="gender">Gender:</label>
+            <select name="gender" id="select">
+                <option disabled selected value="">Choose one....</option>
+                <option value="f">Female</option>
+                <option value="m">Male</option>
+                <option value="n/a">Prefer not to say</option>
+            </select>
+        </div>
+
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
