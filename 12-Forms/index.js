@@ -19,5 +19,7 @@ const formSubmit = event =>{
 
 document.querySelector('form').addEventListener('submit', formSubmit)
 
-// document.querySelector('[name="email]').addEventListener('blur', check)
 const check = obj => obj.value.length < 1 ? obj.classList.add('error') : obj.classList.remove('error')
+
+
+document.querySelector('[name="email]').addEventListener('blur', check)
